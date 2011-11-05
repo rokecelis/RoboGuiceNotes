@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, NotesActivity!</string>
+    <string name="app_name">Notes</string>
+    <string name="txtButton">Add new note</string>
+    <string name="title">Title:</string>
+    <string name="note">Note:</string>
+    <string name="Save">Save</string>
+    <string name="Cancel">Cancel</string>
+    <string name="back">Back 2 List</string>
+    <string name="edit">Edit note</string>
+    <string name="delete">Delete note</string>
+</resources>
