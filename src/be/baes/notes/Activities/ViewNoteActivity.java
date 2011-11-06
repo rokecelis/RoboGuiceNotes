@@ -16,7 +16,7 @@ import roboguice.activity.RoboActivity;
 import roboguice.inject.InjectView;
 
 public class ViewNoteActivity extends RoboActivity {
-	@InjectView(R.id.textTitle) TextView textTitle;
+	//@InjectView(R.id.textTitle) TextView textTitle;
 	@InjectView(R.id.textText) TextView textText;
 	@InjectView(R.id.backButton) Button backButton;
 	@InjectView(R.id.editButton) Button editButton;
@@ -50,7 +50,7 @@ public class ViewNoteActivity extends RoboActivity {
 		Log.i("cbaes", "Id: " + note.getId());
 		Log.i("cbaes", "Title: " + note.getTitle());
 		Log.i("cbaes", "Note: " + note.getNote());
-		textTitle.setText(note.getTitle());
+		//textTitle.setText(note.getTitle());
 		textText.setText(note.getNote());
 	}
 }

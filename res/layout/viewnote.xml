@@ -28,7 +28,8 @@
         android:id="@+id/editButton"></Button>
         <Button android:text="@string/delete" 
         android:layout_height="wrap_content" 
-        android:layout_width="wrap_content" android:id="@+id/deleteButton"></Button>
+        android:layout_width="wrap_content" 
+        android:id="@+id/deleteButton"></Button>
     </LinearLayout>
     
 </LinearLayout>
