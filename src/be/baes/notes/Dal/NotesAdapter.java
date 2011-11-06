@@ -6,13 +6,6 @@ import android.database.SQLException;
 
 public interface NotesAdapter {
 
-	//retrieves a database
-	public abstract void open() throws SQLException;
-
-	//close the dbHelper
-	public abstract void close();
-
-	//create a new note, returns the note id
 	public abstract long createNote(String title, String note);
 
 	public abstract boolean updateNote(long rowId, String title, String note);

@@ -29,12 +29,7 @@ public class NotesSQLiteAdapter implements NotesAdapter {
 		open();
 	}
 	
-	//retrieves a database
-	/* (non-Javadoc)
-	 * @see be.baes.notes.Dal.NotesAdapter#open()
-	 */
-	@Override
-	public void open() throws SQLException
+	private void open() throws SQLException
 	{
 		if(context == null) Log.i("cbaes", "activity is still null");
 		this.dbHelper = new SQLiteHelper(context);
@@ -50,14 +45,18 @@ public class NotesSQLiteAdapter implements NotesAdapter {
 		}
 	}
 	
-	//close the dbHelper
-	/* (non-Javadoc)
-	 * @see be.baes.notes.Dal.NotesAdapter#close()
-	 */
 	@Override
-	public void close()
+	protected void finalize() throws Throwable 
 	{
-		dbHelper.close();
+		Log.i("cbaes", "finalizing NotesSQLiteAdapter");
+	    try 
+	    {
+	    	dbHelper.close();        // close open files
+	    } 
+	    finally 
+	    {
+	        super.finalize();
+	    }
 	}
 	
 	//create a new note, returns the note id
