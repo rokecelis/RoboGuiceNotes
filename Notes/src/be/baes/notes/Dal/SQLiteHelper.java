@@ -23,6 +23,10 @@ public class SQLiteHelper extends SQLiteOpenHelper
 	public SQLiteHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 	}
+	
+	public SQLiteHelper(Context context, String databasename) {
+		super(context, databasename, null, DATABASE_VERSION);
+	}
 
 	/* (non-Javadoc)
 	 * @see be.baes.notes.Dal.DatabaseHelper#onCreate(android.database.sqlite.SQLiteDatabase)
