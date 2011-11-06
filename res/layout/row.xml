@@ -14,9 +14,4 @@
     android:layout_width="wrap_content" 
     android:id="@+id/rowText" 
     android:maxLines="2"></TextView>   
-    <TextView android:text="TextView" 
-    android:layout_height="wrap_content" 
-    android:layout_width="wrap_content" 
-    android:id="@+id/rowId" 
-    android:visibility="invisible"></TextView>   
 </LinearLayout>

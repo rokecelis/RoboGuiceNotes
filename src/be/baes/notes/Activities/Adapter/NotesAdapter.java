@@ -44,11 +44,9 @@ public class NotesAdapter extends ArrayAdapter<Note>
 		{
 			noteView = (LinearLayout) convertView;
 		}
-		TextView rowId =(TextView)noteView.findViewById(R.id.rowId);
 		TextView rowTitle =(TextView)noteView.findViewById(R.id.rowTitle);
 		TextView rowText =(TextView)noteView.findViewById(R.id.rowText);
 
-		rowId.setText(note.getId().toString());
 		rowTitle.setText(note.getTitle());
 		rowText.setText(note.getNote());
 		return noteView;
